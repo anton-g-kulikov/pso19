@@ -32,14 +32,7 @@
     @apply bg-accent-orange p-4 rounded-lg my-4;
   }
 
-  .gallery-item {
-    @apply relative rounded-lg overflow-hidden shadow-md;
-  }
-
-  .gallery-item img {
-    @apply w-full h-64 object-cover transition-transform duration-300 hover:scale-105;
-  }
-
+  /* Removed duplicate .gallery-item and .gallery-item img definitions */
   .gallery-item-caption {
     @apply absolute bottom-0 left-0 right-0 bg-black/70 text-white p-2 text-sm;
   }
