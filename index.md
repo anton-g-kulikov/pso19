@@ -1,28 +1,22 @@
 ---
-layout: default
+layout: page
 title: ОБЩЕСТВЕННЫЙ ПОИСКОВО-СПАСАТЕЛЬНЫЙ ОТРЯД РЕСПУБЛИКИ ХАКАСИЯ
 subtitle: Мы помогаем людям в чрезвычайных ситуациях
 ---
 
-<section class="about-preview py-12 px-4 max-w-7xl mx-auto" id="about">
-  <h2 class="text-3xl font-semibold text-center mb-6">О нас</h2>
-  <p class="text-lg text-center mb-8">
-    Краткая информация об отряде и его деятельности...
-  </p>
-  <div class="text-center">
-    <a href="/about/" class="button">Подробнее</a>
-  </div>
-</section>
+## О нас
 
-<section class="guide-preview bg-gray-50 py-12 px-4" id="guide">
-  <div class="max-w-7xl mx-auto">
-    <h2 class="text-3xl font-semibold text-center mb-6">Памятка туристам</h2>
-    <p class="text-lg text-center mb-8">
-      Основные правила безопасности в походе...
-    </p>
-    <div class="flex justify-center gap-4">
-      <a href="/assets/docs/tourist-guide.pdf" class="button">Скачать PDF</a>
-      <a href="/guide/" class="button">Читать подробнее</a>
-    </div>
-  </div>
-</section>
+На данный момент отряд состоит из 4-х подразделений, находящихся в разных регионах.
+
+- г. Саяногорск (в том числе р.п. Черёмушки)
+- г. Абаза
+- с. Балыкса
+- г. Абакан
+
+[Подробнее](/about/){:.inline-block .px-4 .py-2 .bg-primary-blue .text-white .rounded .hover:bg-opacity-90 .transition-colors .duration-200}
+
+## Памятка туристам
+
+Прочитайте как готовиться к походу и что делать, если вы заблудились
+
+[Читать подробнее](/guide/){:.inline-block .px-4 .py-2 .bg-primary-blue .text-white .rounded .hover:bg-opacity-90 .transition-colors .duration-200}
