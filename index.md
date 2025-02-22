@@ -13,14 +13,15 @@ subtitle: Мы помогаем людям в чрезвычайных ситу�
 - с. Балыкса
 - г. Абакан
 
-[Подробнее](/about/){:.inline-block .px-4 .py-2 .bg-primary-blue .text-white .rounded .hover:bg-opacity-90 .transition-colors .duration-200}
+[Подробнее](/about/){: .button}
 
 ## Памятка туристам
 
 Прочитайте как готовиться к походу и что делать, если вы заблудились
 
-[Читать подробнее](/guide/){:.inline-block .px-4 .py-2 .bg-primary-blue .text-white .rounded .hover:bg-opacity-90 .transition-colors .duration-200}
+[Читать подробнее](/guide/){:.button}
 
 ## Помощь отряду
+
 Сканируйте банковским приложением  
 ![QR Code]({{ '/assets/images/qr.png' | relative_url }}){: style="max-width:300px;" }
