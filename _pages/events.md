@@ -3,12 +3,10 @@ layout: page
 title: Мероприятия
 permalink: /events/
 upcoming_events:
-  - date: 2024-05-20
-    title: Учения по поиску в лесу
-    description: Практические занятия по поиску людей в лесной местности
-past_events:
-  - date: 2024-04-15
-    title: Тренировка по оказанию первой помощи
+  - date: "Август 2025"
+    title: "Ориентир на спасение"
+    description: "Практические занятия по поиску людей в лесной местности"
+past_events: []
 ---
 
 ## Ближайшие события
@@ -21,9 +19,13 @@ past_events:
 
 {{ event.description }}
 
+[Регистрация](https://forms.yandex.ru/u/67b476a002848f83f4274c5f/)
+
 ---
 
 {% endfor %}
+
+{% if page.past_events and page.past_events.size > 0 %}
 
 ## Прошедшие мероприятия
 
@@ -31,6 +33,7 @@ past_events:
 
 - **{{ event.title }}** ({{ event.date | date: "%d.%m.%Y" }})
   {% endfor %}
+  {% endif %}
 
 ## Хотите организовать мероприятие?
 

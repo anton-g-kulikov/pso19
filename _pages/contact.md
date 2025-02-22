@@ -24,14 +24,5 @@ social:
 ### Социальные сети
 
 Следите за нашими новостями и обновлениями в социальных сетях:
-
-- <a
-            href="https://vk.com/opso19ru"
-            class="hover:text-accent-green transition-colors duration-200"
-            >ВКонтакте</a
-          >
-- <a
-            href="https://t.me/opso19"
-            class="hover:text-accent-green transition-colors duration-200"
-            >Telegram</a
-          >
+– [ВКонтакте](https://vk.com/opso19ru)
+– [Telegram](https://t.me/opso19)
