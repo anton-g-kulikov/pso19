@@ -5,7 +5,7 @@ module.exports = {
     "./_posts/**/*.{html,md}",
     "./_pages/**/*.{html,md}",
     "./*.{html,md}",
-    "./index.html",
+    "./assets/css/*.css",
   ],
   theme: {
     extend: {
@@ -13,6 +13,7 @@ module.exports = {
         "primary-blue": "#4a5568",
         "accent-green": "#68d391",
         "primary-orange": "#F0801C",
+        "accent-orange": "#F0801C",
         "text-color": "#2d3748",
         background: "#f7fafc",
         "header-green": "#89BE41",
