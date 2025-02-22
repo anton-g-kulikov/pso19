@@ -1,13 +1,16 @@
-<header class="bg-header-green shadow-md py-8">
-  <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
-    <div class="transition-transform duration-300 hover:scale-105">
-      <a href="{{ '/' | relative_url }}">
-        <img
-          src="{{ '/assets/images/logo/opso-logo.svg' | relative_url }}"
-          alt="{{ site.title }}"
-          class="h-64 w-auto"
-        />
-      </a>
+<header class="sticky top-0 z-0 w-full shadow-md">
+  <div class="relative h-64 bg-header-green">
+    <!-- Container for background and logo -->
+    <div class="max-w-7xl mx-auto px-4 flex flex-col items-center h-full">
+      <div class="transition-transform duration-300 hover:scale-105">
+        <a href="{{ '/' | relative_url }}">
+          <img
+            src="{{ '/assets/images/logo/opso-logo.svg' | relative_url }}"
+            alt="{{ site.title }}"
+            class="h-64 w-auto"
+          />
+        </a>
+      </div>
     </div>
   </div>
 </header>

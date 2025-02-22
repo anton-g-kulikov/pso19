@@ -12,6 +12,12 @@
       @apply bg-accent-orange p-4 my-4 text-white font-medium  leading-relaxed;
     }
   }
+
+  .main-content {
+    @apply relative z-10 bg-white min-h-screen -mt-2; /* Negative margin makes content overlap */
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
 }
 
 /* Remove duplicate font declarations since they're handled by Tailwind */
