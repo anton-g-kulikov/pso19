@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Общественный Спасательный Отряд Республики Хакасия
+title: Общественный Поисков-Спасательный Отряд Республики Хакасия
 subtitle: Мы помогаем людям в чрезвычайных ситуациях
 ---
 <section class="about-preview py-12 px-4 max-w-7xl mx-auto" id="about">
