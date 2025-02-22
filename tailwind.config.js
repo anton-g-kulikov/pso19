@@ -37,14 +37,17 @@ module.exports = {
             fontFamily:
               'Rubik, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
             h1: {
+              marginBottom: "0.5em", // Reduced margin
               fontFamily: "Rubik, system-ui, sans-serif",
               fontWeight: "700",
             },
             h2: {
+              marginBottom: "0.5em", // Reduced margin
               fontFamily: "Rubik, system-ui, sans-serif",
               fontWeight: "600",
             },
             h3: {
+              marginBottom: "0.5em", // Reduced margin
               fontFamily: "Rubik, system-ui, sans-serif",
               fontWeight: "600",
             },
@@ -58,6 +61,22 @@ module.exports = {
                 color: "#68d391",
               },
             },
+          },
+        },
+        lg: {
+          // This covers .prose-lg
+          css: {
+            h1: {
+              marginBottom: "0.5em",
+              fontFamily: "Rubik, system-ui, sans-serif",
+              fontWeight: "700",
+            },
+            h2: {
+              marginBottom: "0.5em",
+              fontFamily: "Rubik, system-ui, sans-serif",
+              fontWeight: "600",
+            },
+            // etc.
           },
         },
       },
