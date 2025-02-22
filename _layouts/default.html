@@ -7,9 +7,32 @@
       {% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{
       site.title }}{% endif %}
     </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="{{ '/assets/css/styles.css' | relative_url }}"
+    />
+    <link
+      rel="icon"
+      href="{{ '/favicon.ico' | relative_url }}"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{ '/assets/images/favicon-32x32.png' | relative_url }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{ '/assets/images/favicon-16x16.png' | relative_url }}"
     />
   </head>
   <body class="flex flex-col min-h-full">

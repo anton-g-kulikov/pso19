@@ -8,6 +8,19 @@ module.exports = {
     "./assets/css/*.css",
   ],
   theme: {
+    fontFamily: {
+      sans: [
+        "Rubik",
+        "system-ui",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        "Arial",
+        "sans-serif",
+      ],
+    },
     extend: {
       colors: {
         "primary-blue": "#4a5568",
@@ -21,13 +34,24 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
-            color: "#2d3748",
+            fontFamily:
+              'Rubik, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
             h1: {
-              color: "#4a5568",
+              fontFamily: "Rubik, system-ui, sans-serif",
+              fontWeight: "700",
             },
             h2: {
-              color: "#4a5568",
+              fontFamily: "Rubik, system-ui, sans-serif",
+              fontWeight: "600",
             },
+            h3: {
+              fontFamily: "Rubik, system-ui, sans-serif",
+              fontWeight: "600",
+            },
+            p: {
+              fontFamily: "Rubik, system-ui, sans-serif",
+            },
+            color: "#2d3748",
             a: {
               color: "#4a5568",
               "&:hover": {
