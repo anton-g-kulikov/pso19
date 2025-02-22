@@ -2,14 +2,11 @@
 layout: contact
 title: Контакты
 permalink: /contact/
-phone: "+7 (XXX) XXX-XX-XX"
-email: "info@pso19.ru"
-address: "г. Абакан, ул. ..."
+phone: "7 923 395 90 81"
+email: "pso.sayan@yandex.ru"
 social:
-  vk: "https://vk.com/..."
-  telegram: "https://t.me/..."
-  whatsapp: "https://wa.me/..."
-map_url: "https://www.google.com/maps/embed?pb=YOUR-EMBED-URL"
+  vk: "https://vk.com/opso19ru"
+  telegram: "https://t.me/opso19"
 ---
 
 ## Как с нами связаться
@@ -28,6 +25,13 @@ map_url: "https://www.google.com/maps/embed?pb=YOUR-EMBED-URL"
 
 Следите за нашими новостями и обновлениями в социальных сетях:
 
-- ВКонтакте
-- Telegram
-- WhatsApp
+- <a
+            href="https://vk.com/opso19ru"
+            class="hover:text-accent-green transition-colors duration-200"
+            >ВКонтакте</a
+          >
+- <a
+            href="https://t.me/opso19"
+            class="hover:text-accent-green transition-colors duration-200"
+            >Telegram</a
+          >
