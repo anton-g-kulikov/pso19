@@ -1,0 +1,26 @@
+{
+  "name": "pso19",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
+  "scripts": {
+    "build:css": "postcss assets/css/main.css -o assets/css/styles.css",
+    "watch:css": "postcss assets/css/main.css -o assets/css/styles.css --watch",
+    "build": "npm run build:css && bundle exec jekyll build",
+    "start": "concurrently \"npm run watch:css\" \"bundle exec jekyll serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.3.5"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.16"
+  }
+}

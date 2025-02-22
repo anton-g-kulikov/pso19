@@ -1,0 +1,44 @@
+<nav class="bg-primary-blue py-4">
+  <ul class="flex flex-wrap justify-center gap-4">
+    <li>
+      <a
+        href="{{ '/' | relative_url }}"
+        class="text-white px-4 py-2 hover:text-accent-green transition-colors duration-200 {% if page.url == '/' %}text-accent-green{% endif %}"
+      >
+        Главная</a
+      >
+    </li>
+    <li>
+      <a
+        href="{{ '/about/' | relative_url }}"
+        class="text-white px-4 py-2 hover:text-accent-green transition-colors duration-200 {% if page.url == '/about/' %}text-accent-green{% endif %}"
+      >
+        Об отряде</a
+      >
+    </li>
+    <li>
+      <a
+        href="{{ '/gallery/' | relative_url }}"
+        class="text-white px-4 py-2 hover:text-accent-green transition-colors duration-200 {% if page.url == '/gallery/' %}text-accent-green{% endif %}"
+      >
+        Галерея</a
+      >
+    </li>
+    <li>
+      <a
+        href="{{ '/guide/' | relative_url }}"
+        class="text-white px-4 py-2 hover:text-accent-green transition-colors duration-200 {% if page.url == '/guide/' %}text-accent-green{% endif %}"
+      >
+        Памятка</a
+      >
+    </li>
+    <li>
+      <a
+        href="{{ '/events/' | relative_url }}"
+        class="text-white px-4 py-2 hover:text-accent-green transition-colors duration-200 {% if page.url == '/events/' %}text-accent-green{% endif %}"
+      >
+        Мероприятия</a
+      >
+    </li>
+  </ul>
+</nav>

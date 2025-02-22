@@ -1,0 +1,81 @@
+<footer class="bg-primary-blue text-white pt-12 pb-6 mt-12">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="px-4">
+      <h3 class="text-accent-green text-lg font-semibold mb-4">Контакты</h3>
+      <ul class="space-y-2">
+        <li>Телефон: [Номер]</li>
+        <li>Email: [Email]</li>
+        <li>Адрес: [Адрес]</li>
+      </ul>
+    </div>
+
+    <div class="px-4">
+      <h3 class="text-accent-green text-lg font-semibold mb-4">
+        Быстрые ссылки
+      </h3>
+      <ul class="space-y-2">
+        <li>
+          <a
+            href="{{ '/about/' | relative_url }}"
+            class="hover:text-accent-green transition-colors duration-200"
+            >Об отряде</a
+          >
+        </li>
+        <li>
+          <a
+            href="{{ '/guide/' | relative_url }}"
+            class="hover:text-accent-green transition-colors duration-200"
+            >Памятка туристам</a
+          >
+        </li>
+        <li>
+          <a
+            href="{{ '/events/' | relative_url }}"
+            class="hover:text-accent-green transition-colors duration-200"
+            >Мероприятия</a
+          >
+        </li>
+        <li>
+          <a
+            href="{{ '/gallery/' | relative_url }}"
+            class="hover:text-accent-green transition-colors duration-200"
+            >Галерея</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="px-4">
+      <h3 class="text-accent-green text-lg font-semibold mb-4">
+        Социальные сети
+      </h3>
+      <ul class="space-y-2">
+        <li>
+          <a
+            href="#"
+            class="hover:text-accent-green transition-colors duration-200"
+            >ВКонтакте</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="hover:text-accent-green transition-colors duration-200"
+            >Telegram</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="hover:text-accent-green transition-colors duration-200"
+            >WhatsApp</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-white/10 mt-8 pt-8 text-center">
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+  </div>
+</footer>
