@@ -56,9 +56,9 @@ module.exports = {
             },
             color: "#2d3748",
             a: {
-              color: "#4a5568",
+              color: "#68d391",
               "&:hover": {
-                color: "#68d391",
+                color: "#4a5568",
               },
             },
           },
