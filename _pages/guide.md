@@ -2,8 +2,8 @@
 layout: page
 title: Памятка туристам
 permalink: /guide/
-pdf_a4_1: /assets/docs/memo-A6-1.pdf
-pdf_a4_2: /assets/docs/memo-A6-2.pdf
+pdf_a6_1: /assets/docs/memo-A6-1.pdf
+pdf_a6_2: /assets/docs/memo-A6-2.pdf
 phone: "7 923 395 90 81"
 ---
 
