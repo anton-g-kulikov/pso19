@@ -2,31 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: "Rubik", system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Rubik", system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+
 @layer components {
   .button {
-    @apply inline-block px-4 py-2 bg-primary-blue text-white no-underline rounded hover:bg-opacity-90 transition-colors duration-200 font-sans;
+    @apply inline-block px-4 py-2 bg-primary-blue text-white rounded hover:bg-opacity-90 transition-colors duration-200 font-sans;
   }
 
-  @layer components {
-    .warning-box {
-      @apply bg-accent-orange p-4 my-4 text-white font-medium  leading-relaxed;
-    }
+  .guide-section {
+    @apply bg-white p-8 rounded-lg shadow-md mb-8;
   }
 
-  .main-content {
-    @apply relative z-10 bg-white min-h-screen -mt-2; /* Negative margin makes content overlap */
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+  .warning-box {
+    @apply bg-accent-orange p-4 rounded-lg my-4;
+  }
+
+  /* Removed duplicate .gallery-item and .gallery-item img definitions */
+  .gallery-item-caption {
+    @apply absolute bottom-0 left-0 right-0 bg-black/70 text-white p-2 text-sm;
   }
 }
 
-/* Remove duplicate font declarations since they're handled by Tailwind */
+/* Remove any conflicting font-family declarations */
 body {
-  @apply font-sans text-gray-800;
-  line-height: 1.3;
+  font-family: "Rubik", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  @apply text-gray-800;
 }
 
-/* Basic variables */
+/* Ensure headers use Rubik */
+.site-title {
+  font-family: "Rubik", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+}
+
 :root {
   --primary-blue: #0066cc;
   --primary-white: #ffffff;
@@ -49,12 +75,32 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
 .logo {
   margin-bottom: 1rem;
 }
 
+.logo img {
+  height: 120px; /* Increased from 60px */
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
 .site-title {
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* Decreased from 1.5rem */
   margin: 0;
   max-width: 800px;
   line-height: 1.4;
@@ -86,6 +132,28 @@ section {
   margin: 0 auto;
 }
 
+/* Responsive design */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav li {
+    margin: 0.5rem 0;
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .site-title {
+    font-size: 1.2rem;
+  }
+}
+
 /* Page specific styles */
 .page {
   max-width: 1200px;
@@ -97,6 +165,143 @@ section {
   color: var(--primary-blue);
   margin-bottom: 2rem;
   text-align: center;
+}
+
+/* Events page specific styles */
+.featured-event {
+  background: var(--primary-white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.calendar-section {
+  margin: 2rem 0;
+}
+
+.event-list {
+  list-style: none;
+}
+
+.event-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.past-events {
+  background: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.host-event {
+  background: var(--accent-green);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.host-event a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.host-event a:hover {
+  text-decoration: underline;
+}
+
+/* Gallery page styles */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--primary-white);
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.gallery-category {
+  background: var(--primary-white);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Guide page styles */
+.guide-section {
+  background: var(--primary-white);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.guide-section h2 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.guide-list {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.guide-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.guide-download {
+  background: var(--accent-green);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.guide-download a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.warning-box {
+  background: var(--accent-orange);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
 }
 
 /* Footer styles */
