@@ -7,6 +7,7 @@ email: "pso.sayan@yandex.ru"
 social:
   vk: "https://vk.com/opso19ru"
   telegram: "https://t.me/opso19"
+  max: "https://max.ru/id1900011222_biz"
 ---
 
 ## Как с нами связаться
@@ -30,3 +31,4 @@ social:
 Следите за нашими новостями и обновлениями в социальных сетях:  
 - [ВКонтакте](https://vk.com/opso19ru)  
 - [Telegram](https://t.me/opso19)
+- [MAX](https://max.ru/id1900011222_biz)
