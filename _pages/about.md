@@ -69,4 +69,4 @@ permalink: /about/
 В назначении платежа обязательно указать: «Благотворительное пожертвование на уставные нужды».  
 
 Для быстрого заполнения реквизитов, сканируйте банковским приложением:  
-![QR Code]({{ '/assets/images/qr.png' | relative_url }}){: style="max-width:300px;" }
+![QR Code]({{ '/assets/images/qr.png' | relative_url }}?v=418f97c6){: style="max-width:300px;" }
