@@ -2,38 +2,25 @@
 layout: page
 title: Мероприятия
 permalink: /events/
-upcoming_events:
-  - date: "Август 2025"
-    title: "«Ориентир на спасение»"
-    description: "Практические занятия по поиску людей в лесной местности и подготовка к вступлению в отряд"
-past_events: []
 ---
 
-## Ближайшие события
+### [#Этнова2026]({{ '/events/etnova-2026/' | relative_url }})
 
-{% for event in page.upcoming_events %}
-
-### {{ event.title }}
-
-**Дата:** {{ event.date | date: "%d.%m.%Y" }}
-
-{{ event.description }}
-
-[Форма для регистрации](https://forms.yandex.ru/u/67b476a002848f83f4274c5f/)
+**Дата:** Август 2026
 
 ---
 
-{% endfor %}
+### [«Ориентир на спасение-2026»]({{ '/events/orientir-na-spasenie-2026/' | relative_url }})
 
-{% if page.past_events and page.past_events.size > 0 %}
+**Дата:** Август 2026
 
-## Прошедшие мероприятия
+---
 
-{% for event in page.past_events %}
+### [«Ориентир на спасение»]({{ '/events/orientir-na-spasenie-2025/' | relative_url }})
 
-- **{{ event.title }}** ({{ event.date | date: "%d.%m.%Y" }})
-  {% endfor %}
-  {% endif %}
+**Дата:** Август 2025
+
+---
 
 ## Хотите организовать мероприятие?
 
