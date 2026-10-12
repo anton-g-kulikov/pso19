@@ -16,7 +16,7 @@ permalink: /events/
 
 ---
 
-### [«Ориентир на спасение»]({{ '/events/orientir-na-spasenie-2025/' | relative_url }})
+### [«Ориентир на спасение-2025»]({{ '/events/orientir-na-spasenie-2025/' | relative_url }})
 
 **Дата:** Август 2025
 
